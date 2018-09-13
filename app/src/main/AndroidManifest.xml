@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DichtePlato" />
+        <activity android:name=".AlkoholBerechnen" />
     </application>
 
 </manifest>
