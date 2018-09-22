@@ -7,25 +7,25 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class DichtePlato extends AppCompatActivity implements View.OnClickListener {
+public class PlatoDichte extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dichte_plato);
-        Button button = (Button) findViewById(R.id.button);
+        setContentView(R.layout.activity_plato_dichte);
+        Button button = (Button) findViewById(R.id.button3);
         button.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        TextView plato = (TextView) findViewById(R.id.textView4);
-        EditText input = (EditText) findViewById(R.id.editText2);
+        TextView dichte = (TextView) findViewById(R.id.textView18);
+        EditText input = (EditText) findViewById(R.id.editText6);
 
         // check if user entered a value, otherwise do nothing
         if (input.getText().length()!=0) {
-            double solution = ((Double.parseDouble(input.getText().toString()) - 997) / 4.13);
+            double solution = (Double.parseDouble(input.getText().toString()) * 4.13 + 997);
             //String printablesolution = new Double(solution).toString();
-            plato.setText(String.format("%.1f", solution));
+            dichte.setText(String.format("%.1f", solution));
         }
     }
 }
