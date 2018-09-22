@@ -23,7 +23,7 @@ public class DichtePlato extends AppCompatActivity implements View.OnClickListen
 
         // check if user entered a value, otherwise do nothing
         if (input.getText().length()!=0) {
-            double solution = ((Double.parseDouble(input.getText().toString()) - 1) * 1000 / 4);
+            double solution = ((Double.parseDouble(input.getText().toString()) - 1) * 997 / 4.13);
             //String printablesolution = new Double(solution).toString();
             plato.setText(String.format("%.1f", solution));
         }
