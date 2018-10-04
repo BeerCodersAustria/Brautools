@@ -24,8 +24,8 @@ public class AlkoholBerechnen extends AppCompatActivity implements View.OnClickL
 
         // check if both values are entered
         if (anfang.getText().length()!=0 && ende.getText().length()!=0) {
-            double valueAnfang = (Double.parseDouble(anfang.getText().toString()));
-            double valueEnde = (Double.parseDouble(ende.getText().toString()));
+            double valueAnfang = (Double.parseDouble(anfang.getText().toString()))/1000;
+            double valueEnde = (Double.parseDouble(ende.getText().toString()))/1000;
             // constant of 131.25 is the product of 105x1.25 which is used to determine the vol.%
             double solution = (valueAnfang-valueEnde)*131.25;
             //String printablesolution = new Double(solution).toString();
