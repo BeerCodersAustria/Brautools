@@ -19,6 +19,7 @@
         <activity android:name=".DichtePlato" />
         <activity android:name=".AlkoholBerechnen" />
         <activity android:name=".PlatoDichte" />
+        <activity android:name=".About" />
     </application>
 
 </manifest>

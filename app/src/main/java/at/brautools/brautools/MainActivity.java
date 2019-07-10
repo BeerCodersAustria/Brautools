@@ -16,10 +16,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button plato = (Button) findViewById(R.id.button1);
         Button alkohol = (Button) findViewById(R.id.button3);
         Button dichte = (Button) findViewById(R.id.button4);
+        Button about = (Button) findViewById(R.id.button5);
 
         plato.setOnClickListener(this);
         alkohol.setOnClickListener(this);
         dichte.setOnClickListener(this);
+        about.setOnClickListener(this);
      //   plato.setOnClickListener(this);
      //   alkohol.setOnClickListener(this);
     }
@@ -38,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button4:
                 Intent intent3 = new Intent(this, PlatoDichte.class);
                 startActivity(intent3);
+                break;
+            case R.id.button5:
+                Intent intent4 = new Intent(this, About.class);
+                startActivity(intent4);
                 break;
             default:
                 break;
