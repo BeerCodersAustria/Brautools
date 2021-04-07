@@ -29,7 +29,6 @@ public class AlkoholBerechnenPlato extends AppCompatActivity implements View.OnC
             double valueEnde = ((Double.parseDouble(ende.getText().toString())) * 4.13 + 997)/1000;
             // constant of 131.25 is the product of 105x1.25 which is used to determine the vol.%
             double solution = (valueAnfang-valueEnde)*131.25;
-            //String printablesolution = new Double(solution).toString();
             alkohol.setText(String.format("%.1f", solution));
         }
     }

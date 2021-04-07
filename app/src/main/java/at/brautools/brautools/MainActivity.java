@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dichte.setOnClickListener(this);
         about.setOnClickListener(this);
         alkoholPlato.setOnClickListener(this);
-     //   plato.setOnClickListener(this);
-     //   alkohol.setOnClickListener(this);
     }
 
     @Override

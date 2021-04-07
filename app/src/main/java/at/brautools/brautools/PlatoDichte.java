@@ -24,7 +24,6 @@ public class PlatoDichte extends AppCompatActivity implements View.OnClickListen
         // check if user entered a value, otherwise do nothing
         if (input.getText().length()!=0) {
             double solution = (Double.parseDouble(input.getText().toString()) * 4.13 + 997);
-            //String printablesolution = new Double(solution).toString();
             dichte.setText(String.format("%.1f", solution));
         }
     }

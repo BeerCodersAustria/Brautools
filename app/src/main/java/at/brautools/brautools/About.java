@@ -12,8 +12,6 @@ public class About extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-        //Button button = (Button) findViewById(R.id.button2);
-        //button.setOnClickListener(this);
     }
 
     @Override
@@ -28,7 +26,6 @@ public class About extends AppCompatActivity implements View.OnClickListener {
             double valueEnde = (Double.parseDouble(ende.getText().toString()))/1000;
             // constant of 131.25 is the product of 105x1.25 which is used to determine the vol.%
             double solution = (valueAnfang-valueEnde)*131.25;
-            //String printablesolution = new Double(solution).toString();
             alkohol.setText(String.format("%.1f", solution));
         }
     }
